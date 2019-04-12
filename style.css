@@ -1,0 +1,69 @@
+body{
+    height: 100%;
+    background: linear-gradient(180deg,rgba(255, 255, 255, 0.2) 100%);    
+}
+
+.slide {
+    max-width:auto;
+    height:690px;
+    position:relative;
+}
+
+.slide1,.slide2,.slide3{
+    position: absolute;
+    width:100%;
+    height:100%;
+}
+
+.slide1 {
+    background:url(3.jpg) no-repeat center;
+    background-size: cover;
+    animation: fade 10s infinite;
+    -webkit-animation: fade 10s infinite;
+}
+.slide2{
+    background:url(2.jpg) no-repeat center;
+    background-size: cover;
+    animation: fade2 35s infinite;
+    -webkit-animation: fade2 35s infinite;
+}
+.slide3{
+    background:url(1.jpeg) no-repeat center;
+    background-size: cover;
+    animation: fade3 35s infinite;
+    -webkit-animation: fade3 35s infinite;
+    
+}
+
+.teks {
+    font-family: DaunPenh;
+    font-size: 20px;
+    text-align: center;
+    display: inline-block;
+    width:100%;
+    margin-top: 450px;
+    color: rgb(255, 255, 255);
+}
+
+@keyframes fade{
+    0%{opacity:1}
+    33.333%{opacity:0}
+    66.666%{opacity: 0}
+    100%{opacity: 1}
+}
+
+@keyframes fade2{
+    0%{opacity:0}
+    33.333%{opacity:1}
+    66.666%{opacity: 0}
+    100%{opacity: 0}
+}
+
+@keyframes fade3{
+    0%{opacity:0}
+    33.333%{opacity:0}
+    66.666%{opacity: 1}
+    100%{opacity: 0}
+}
+
+
